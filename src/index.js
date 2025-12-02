@@ -1,3 +1,5 @@
+    if ("scrollRestoration" in history) { history.scrollRestoration = "manual"; }
+    window.addEventListener("DOMContentLoaded", () => { if (!location.hash) { window.scrollTo(0, 0); } });
     document.getElementById("current-year").textContent = new Date().getFullYear();
 
     function handleFormSubmit(event) {
